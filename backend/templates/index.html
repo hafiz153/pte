@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTE Repeat Sentence</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>PTE Repeat Sentence</h1>
+    <p>Repeat the following sentence:</p>
+    <p id="sentence_display_container">
+        <span id="current_sentence_number"></span> / <span id="total_sentences"></span>
+        <p id="sentence">Loading sentence...</p>
+    <audio id="audioPlayer" controls style="display: none;"></audio>
+    <button id="playAudio" disabled>Play Audio</button>
+    </p>
+    <button id="prevSentence" disabled>Previous</button>
+    <button id="nextSentence" disabled>Next</button>
+    <button id="startRecording">Start Recording</button>
+    <button id="stopRecording" disabled>Stop Recording</button>
+        <p>Overall Score: <span id="score">N/A</span></p>
+        <p>Content: <span id="content_score">N/A</span></p>
+        <p>Pronunciation: <span id="pronunciation_score">N/A</span></p>
+        <p>Oral Fluency: <span id="fluency_score">N/A</span></p>
+        <div id="loading_indicator" style="display: none;">Processing...</div>
+        <h3>AI Explanation:</h3><p id="explanation"></p>
+    <script src="/static/script.js"></script>
+</body>
+</html>
